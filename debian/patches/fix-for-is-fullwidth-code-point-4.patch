@@ -1,0 +1,15 @@
+Description: fix for is-fullwidth-code-point ≥ 4
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2021-11-09
+
+--- a/index.js
++++ b/index.js
+@@ -1,6 +1,6 @@
+ 'use strict';
+ const stripAnsi = require('strip-ansi');
+-const isFullwidthCodePoint = require('is-fullwidth-code-point');
++const isFullwidthCodePoint = require('is-fullwidth-code-point').default;
+ const emojiRegex = require('emoji-regex');
+ 
+ const stringWidth = string => {

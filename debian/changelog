@@ -1,0 +1,77 @@
+node-string-width (4.2.3+~9.2.2-1) unstable; urgency=medium
+
+  * Team upload
+  * Replace is-fullwidth-code-point component by dependency to
+    node-is-fullwidth-code-point virtual package (Closes: #998886) and repack
+  * Add fix for is-fullwidth-code-point ≥ 4
+
+ -- Yadd <yadd@debian.org>  Tue, 09 Nov 2021 15:09:24 +0100
+
+node-string-width (4.2.3+~3.0.0+~9.2.2-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-strip-ansi.
+    + node-string-width: Drop versioned constraint on node-strip-ansi in
+      Depends.
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Drop dependency to nodejs
+  * Use uscan group
+  * Install components in nodejs dir
+  * New upstream version 4.2.3+~3.0.0+~9.2.2
+  * Update lintian overrides
+
+ -- Yadd <yadd@debian.org>  Mon, 08 Nov 2021 17:32:28 +0100
+
+node-string-width (4.2.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Paolo Greppi ]
+  * Update Vcs fields for migration to https://salsa.debian.org/
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.0
+  * Fix test, then prove that 01-wcwidth.diff patch is wrong
+  * Use pkg-js-tools auto install
+  * Add "Rules-Requires-Root: no"
+  * Embed is-fullwidth-code-point and drop 01-wcwidth.diff patch
+  * Embed component: emoji-regex
+  * New upstream version 4.2.0
+  * Add lintian overrides
+  * Update test (use tape)
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 29 Apr 2020 10:12:57 +0200
+
+node-string-width (2.1.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fix long description typo
+  * Bump standards version
+
+ -- Paolo Greppi <paolo.greppi@libpf.com>  Mon, 30 Oct 2017 17:46:12 +0100
+
+node-string-width (2.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #845240, #842191)
+  * Add a patch to use mocha as test runner rather than ava and to
+    skip the xo style linter test step.
+  * Patch it to replace the dependency on is-fullwidth-code-point with
+    node-wcwidth.js.
+  * Add tests for zero-width non-joiners (ZWNJ) and zero-width joiners
+    (ZWJ) Unicode codepoints.
+
+ -- Paolo Greppi <paolo.greppi@libpf.com>  Tue, 22 Nov 2016 11:01:22 +0000

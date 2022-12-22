@@ -1,0 +1,34 @@
+Description: replace ava by tape
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-04-29
+
+--- a/test.js
++++ b/test.js
+@@ -1,5 +1,5 @@
+-import test from 'ava';
+-import stringWidth from '.';
++const test = require('tape');
++const stringWidth = require('.');
+ 
+ test('main', t => {
+ 	t.is(stringWidth('abcde'), 5);
+@@ -15,6 +15,7 @@
+ 	t.is(stringWidth('\u{2194}\u{FE0F}'), 2, '↔️ default text presentation character rendered as emoji');
+ 	t.is(stringWidth('\u{1F469}'), 2, '👩 emoji modifier base (Emoji_Modifier_Base)');
+ 	t.is(stringWidth('\u{1F469}\u{1F3FF}'), 2, '👩🏿 emoji modifier base followed by a modifier');
++    t.end();
+ });
+ 
+ test('ignores control characters', t => {
+@@ -24,8 +25,10 @@
+ 	t.is(stringWidth(String.fromCharCode(134)), 0);
+ 	t.is(stringWidth(String.fromCharCode(159)), 0);
+ 	t.is(stringWidth('\u001B'), 0);
++    t.end();
+ });
+ 
+ test('handles combining characters', t => {
+ 	t.is(stringWidth('x\u0300'), 1);
++    t.end();
+ });

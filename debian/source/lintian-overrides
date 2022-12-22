@@ -1,0 +1,13 @@
+# Data
+source-contains-prebuilt-javascript-object emoji-regex/RGI_Emoji.js
+source-contains-prebuilt-javascript-object emoji-regex/es2015/RGI_Emoji.js
+source-contains-prebuilt-javascript-object emoji-regex/es2015/index.js
+source-contains-prebuilt-javascript-object emoji-regex/es2015/text.js
+source-contains-prebuilt-javascript-object emoji-regex/index.js
+source-contains-prebuilt-javascript-object emoji-regex/text.js
+very-long-line-length-in-source-file emoji-regex/RGI_Emoji.js line 5 is 12899 characters long (>512)
+very-long-line-length-in-source-file emoji-regex/es2015/RGI_Emoji.js line 5 is 13953 characters long (>512)
+very-long-line-length-in-source-file emoji-regex/es2015/index.js line 5 is 17334 characters long (>512)
+very-long-line-length-in-source-file emoji-regex/es2015/text.js line 5 is 15725 characters long (>512)
+very-long-line-length-in-source-file emoji-regex/index.js line 5 is 15658 characters long (>512)
+very-long-line-length-in-source-file emoji-regex/text.js line 5 is 14391 characters long (>512)

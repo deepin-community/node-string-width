@@ -1,0 +1,12 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-string-width-$1/ \
+ https://github.com/sindresorhus/string-width/tags .*/archive/.*/v?(4[\d\.]+).tar.gz group
+
+opts=\
+ctype=nodejs,\
+component=emoji-regex,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-emoji-regex-$1/ \
+ https://github.com/mathiasbynens/emoji-regex/tags .*/archive/.*/v?(9[\d\.]+).tar.gz group
