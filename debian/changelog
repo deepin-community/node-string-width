@@ -1,3 +1,14 @@
+node-string-width (4.2.3+~cs13.2.3-1) unstable; urgency=medium
+
+  * Team upload
+  * Remove node-is-fullwidth-code-point constraint
+  * Drop fix-for-is-fullwidth-code-point-4.patch
+    + Temporary require node-slice-ansi > 5.0.0+~cs9.0.0-2~
+  * Embed typescript declarations and repack
+  * Fix copyright
+
+ -- Yadd <yadd@debian.org>  Mon, 14 Feb 2022 12:02:46 +0100
+
 node-string-width (4.2.3+~9.2.2-1) unstable; urgency=medium
 
   * Team upload

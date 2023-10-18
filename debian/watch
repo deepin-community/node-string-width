@@ -9,4 +9,9 @@ ctype=nodejs,\
 component=emoji-regex,\
 dversionmangle=auto,\
 filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-emoji-regex-$1/ \
- https://github.com/mathiasbynens/emoji-regex/tags .*/archive/.*/v?(9[\d\.]+).tar.gz group
+ https://github.com/mathiasbynens/emoji-regex/tags .*/archive/.*/v?(9[\d\.]+).tar.gz checksum
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-string-width,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-string-width-$1/" \
+ https://registry.npmjs.org/@types/string-width https://registry.npmjs.org/@types/string-width/-/string-width-([\d\.]+)@ARCHIVE_EXT@ checksum

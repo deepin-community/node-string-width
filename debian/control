@@ -5,10 +5,11 @@ Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.deb
 Uploaders: Paolo Greppi <paolo.greppi@libpf.com>
 Build-Depends: debhelper-compat (= 13)
  , dh-sequence-nodejs
- , node-is-fullwidth-code-point (>= 4) <!nocheck>
+ , node-slice-ansi (>= 5.0.0+~cs9.0.0-2~) <!nocheck>
+ , node-is-fullwidth-code-point <!nocheck>
  , node-strip-ansi <!nocheck>
- , node-wcwidth.js <!nocheck>
  , node-tape <!nocheck>
+ , node-wcwidth.js <!nocheck>
 Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/js-team/node-string-width
 Vcs-Git: https://salsa.debian.org/js-team/node-string-width.git
@@ -19,7 +20,8 @@ Rules-Requires-Root: no
 Package: node-string-width
 Architecture: all
 Depends: ${misc:Depends}
- , node-is-fullwidth-code-point (>= 4)
+ , node-slice-ansi (>= 5.0.0+~cs9.0.0-2~)
+ , node-is-fullwidth-code-point
  , node-strip-ansi
  , node-wcwidth.js
 Provides: ${nodejs:Provides}

@@ -11,3 +11,5 @@ very-long-line-length-in-source-file emoji-regex/es2015/index.js line 5 is 17334
 very-long-line-length-in-source-file emoji-regex/es2015/text.js line 5 is 15725 characters long (>512)
 very-long-line-length-in-source-file emoji-regex/index.js line 5 is 15658 characters long (>512)
 very-long-line-length-in-source-file emoji-regex/text.js line 5 is 14391 characters long (>512)
+# Generic types-* path
+add-component-copyright types-*
