@@ -3,6 +3,7 @@ Upstream-Name: string-width
 Upstream-Contact: https://github.com/sindresorhus/string-width/issues
 Source: https://github.com/sindresorhus/string-width#readme
  https://github.com/mathiasbynens/emoji-regex/tags
+ https://registry.npmjs.org/@types/string-width
 
 Files: *
 Copyright: 2016 Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
@@ -10,7 +11,16 @@ License: Expat
 
 Files: debian/*
 Copyright: 2016 Paolo Greppi <paolo.greppi@libpf.com>
+ 2022 Yadd <yadd@debian.org>
 License: GPL-3.0+
+
+Files: emoji-regex/*
+Copyright: Mathias Bynens <https://mathiasbynens.be/>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
+License: Expat
 
 License: Expat
  Permission is hereby granted, free of charge, to any person
